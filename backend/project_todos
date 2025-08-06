@@ -1,0 +1,42 @@
+add validation in the login sign up flow as well
+
+holding details screen:
+fetch quantity avg cost market price, P/L 
+some mock graph, and changes based on 1d 1w 1m 3m 6m 1y
+transaction history with the holding 
+
+apis creation:
+
+auth system, 
+when the user logs in a jwt token is created and stored which is mapped to the users mail for a week and all the requests will be done through the token only, create a login api for this:
+
+login:
+email and password, on success move further
+
+sign up:
+full name email address password, on register send user to login, add frontend validation
+
+
+dashboard:
+fetch all the holdings, do a dynamic total and calculation and create assets breakdown based on the amount and calculate the total based on the fetched holdings
+holdings: 
+title, quantity: can be shares, btc ETFS etc. , amount of the holding, latest change (increase or decrease in the value in terms of money not percentage)
+
+add transaction:
+ticker fund name, quantity, purchase price and date
+
+alerts:
+save a history of alerts sent to the user, fetch them in the frontend and show them latest to oldest, use flatlist kind of component so that the app dont hang due to large lists
+
+market: 
+fetch two types of data:
+indices which has the title of the stock, the current amount, and the change like increase or decrease in terms of percentage
+
+latest news:
+headline and the title of the news media
+
+account screen:
+change name number and mail and update it using save
+
+reports section:
+fetch month wise latest transaction history and display them on the screen
